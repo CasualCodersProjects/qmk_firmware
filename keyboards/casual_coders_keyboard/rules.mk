@@ -17,7 +17,13 @@ CONSOLE_ENABLE = no         # Console for debug
 COMMAND_ENABLE = no         # Commands for debug and configuration
 
 NKRO_ENABLE = yes           # Enable N-Key Rollover
-#BACKLIGHT_ENABLE = yes      # Enable key backlight functionality
-RGBLIGHT_ENABLE = yes        # Enable keyboard RGB underglow
+RGB_MATRIX_ENABLE = yes
+RGB_MATRIX_DRIVER = WS2812
 # RGB_MATRIX_ENABLE = yes
 AUDIO_ENABLE = no           # Audio output
+
+OLED_ENABLE = yes
+OLED_DRIVER = SSD1306
+OLED_TRANSPORT = i2c
+OLED_DISPLAY_ADDRESS = 0x3C
+WPM_ENABLE = yes
